@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkpurpleblue"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:padding="16dp"
+        android:soundEffectsEnabled="false">
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Score"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorAccent"
+        android:paddingTop="8dp"
+        android:text="Guess what the SPANISH word means."
+        android:textAlignment="center"
+        android:textColor="@color/AluminumGray"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_textviews"
+        android:lineSpacingExtra="6sp"
+        android:padding="8dp"
+        android:text="James said Hola to Pete and Pete waved back, what do you think Hola means?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/darkpurpleblue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/choice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_highlight"
+        android:ellipsize="none"
+        android:padding="8dp"
+        android:soundEffectsEnabled="true"
+        android:text="Smile"
+        android:textColor="@color/AluminumGray"
+        android:textColorHighlight="@color/Orange" />
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_highlight"
+        android:padding="8dp"
+        android:text="Dog"
+        android:textColor="@color/AluminumGray" />
+
+    <Button
+        android:id="@+id/choice3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_highlight"
+        android:padding="8dp"
+        android:text="Car"
+        android:textColor="@color/AluminumGray" />
+
+
+    <Button
+        android:id="@+id/returnMainM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_orange_button"
+        android:text="Return To Main Menu"
+        android:onClick="buttonMainMenuOnClick"
+        android:textColor="@color/AluminumGray" />
+
+</LinearLayout>
+
+
+
+
+
